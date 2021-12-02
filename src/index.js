@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Here we rename the component `BrowserRouter` to `Router` while importing it
+import {BrowseRouter as Router} from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
+    <Router>
     <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
